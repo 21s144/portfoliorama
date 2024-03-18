@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="view port" content=""width=device-width, initial-scale="1.8">
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d819e7db2c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!---<img src="images/logo.png" class="logo">--->
+                    <ul id="sidemenu">
+                        <li> <a href="#header">HOME</a></li>
+                        <li> <a href="#about">ABOUT ME</a></li>
+                        <li> <a href="#services">TECHNICAL SKILLS</a></li>
+                        <li> <a href="#portfolio">MY WORKS</a></li>
+                        <li> <a href="#contact">CONTACT ME</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                
+                <div class="header-text">
+                    <p>
+                        CODING ENTHUSIAST || WEB DEVELOPER
+                    </p>
+                    <h1>Hello, This is <span id="text">RAMADEVI</span><br> From TIRUPUR</h1>
+                </div>
+           
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="work 1.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2><br>
+                        <p>I'm a emerging Engineering student in the stream of Computer Science and Technology.
+                            Along with strong foundation in Programming languages like c, Java and Databases like My sql.
+                            I have knowleadge in Servlet, Jsp and Hibernate. And Iam excellent in DataStructures and Algorithm.
+                            I have a background in frontend developments like html, css, javascript and iam beginner to React Js.
+                            I had completed Internship in "GATEWAY Solution" in "Front-end development" Where my Webdevelopment journey has Started.
+                            I am currently seeking roles where I can Showcase my experience and skills.
+                        </p>
+                        <div class="tab-titles">
+                            
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links " onclick="opentab('skills')">Soft Skills</p>
+                            <p class="tab-links " onclick="opentab('experience')">Certifications</p>
+                            <p class="tab-links " onclick="opentab('Intern')">Internship</p>
+
+                        </div>
+                        <div class="tab-contents active-tab " id="education">
+                            <ul>
+                                <li><span>Karpagam college of Engineering(2021-Present)</span><br>B.E-Computer Science and Technology<br>CGPA-8.86%(Upto 5th semester)</li>
+                                <li><span>Raja National Matricuation higher Secondary School(2019-2021)</span><br>HSC  - 95%<br>SSLC - 93%</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="skills">
+                            <ul>
+                                <li><span>Collaborative</span><br>Enjoying with Team Work.</li>
+                                <li><span>Self-Motivted</span><br>Keep Positive Attitude.</li>
+                                <li><span>Hard-Worker with Smart mind</span><br>Working hard with smart mind.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>NPTEL</span><br>1.Data Structures and Algorithms using Java(Elite+Silver)<br>2.Introduction to Database System                                </li>
+                                <li><span>Hackerrank</span><br>1.Problem Solving(basics)<br>2.Java(basics)<br>3.SQL(basics)</li> 
+                               <!-- <a href="https://www.hackerrank.com/profile/kathirvelarsel"><h4>learn more</h4></a>-->
+                               <!----<li><span>SoloLearn</span><br>1.Basics of Java</li>--->
+                                <li><span>Coursera</span><br>1.Introduction to frontEnd Development<br>2.Programming With JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="Intern">
+                            <ul>
+                                <li><span>GATEWAY SOLUTION</span><br>Introduction to FrontEnd Development:</li>
+                                <p>Interned in full-stack development, focusing on
+                                    HTML, CSS, and JavaScript. Contributed to frontend including website design, user interface
+                                    implementation, and functionality development.
+                                    Gained practical experience in building dynamic and
+                                    interactive websites.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">TECHNICAL Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>PROGRAMMING</h2>
+                <li>Java</li><br>
+                <li>C</li><br>
+                <li>Data Structures and Algorithms</li><br>
+               
+                <li>My SQL</li>
+                <a href="https://leetcode.com/rama47/" target="_blank">Check Out</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>FRONTEND</h2>
+                <li>HTML</li><br>
+                <li>CSS</li><br>
+                <li>JavaScript</li><br>
+                <li>React.js</li>
+                <!---<a href="#">Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>BACKEND</h2>
+                <li>SERVLET</li><br>
+                <li>JSP</li><br>
+                <li>HIBERNATE</li><br>
+                <!---<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+ <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="suduko.jpg" >
+            <div class="layer">
+                <h3>Suduko Solver</h3>
+                <p>Designed and developed a website featuring a
+                    Sudoku Solver game using the Backtracking
+                    algorithm, showcasing proficiency in data structures
+                    and algorithms. Implemented features include a
+                    timer and move counter, enhancing user experience
+                    and adding complexity to the game</p><br>
+                    <li>TECHNOLOGY USED: HTML, CSS, JavaScript.</li>
+                    <li>TOOLS USED: Visual Studio Code.</li>
+                <a href="https://21s144.github.io/sudukofinal/"target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+            </div>
+        </div>
+        <div class="work">
+            <img src="shoping.jpg" >
+            <div class="layer">
+                <h3>E-Commerce Shopping Cart</h3>
+                <p>Developed a dynamic web application for buying and
+                    products using Java Servlets, JSP templates,
+                    JDBC driver, and MySQL database. Implemented
+                    features for user registration, products  listing, Carting functionality
+                    , and Ordering Management.
+                    </p><br>
+                    <li>TECHNOLOGY USED: HTML, CSS, Java, Servlet,
+                        JSP, MySQL.</li>
+                    <li>TOOLS USED:Eclipse,TOMCAT Server, MYSQL WORKBENCH</li>
+                <a href="https://github.com/21s144/shoppingmartservlet"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="car.jpg" >
+            <div class="layer">
+                <h3>Showroom Management System</h3>
+                <p>Developed a showroom management system with
+                    advanced OOPS concepts like polymorphism,
+                    inheritance, and encapsulation. Enabled efficient
+                    management of employee and car details, enhancing
+                    overall showroom operations and functionality.</p><br>
+                    <li>TECHNOLOGY USED : Java</li>
+                    <li>TOOLS USED: Eclipse</li>
+                <a href="https://github.com/21s144/carshowroomManagement"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="work-1.png" >
+            <div class="layer">
+                <h3>Contact Manager</h3>
+                <p>An React Application used to store the contact details like name and email. An dif you want to delete the it you can delete it. This project develop my react skills.
+                    </p><br>
+                    <li>TECHNOLOGY USED: React Js.</li>
+                    <li>TOOLS USED:Visual Studio Code, Node js</li>
+                <a href="https://curious-smakager-20f07c.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="work-2.png" >
+            <div class="layer">
+                <h3>Guess a Number</h3>
+                <p>An Website for playing with computer to guess a number where the system guessing.
+                    </p><br>
+                    <li>TECHNOLOGY USED: HTML, CSS, JAVASCRIPT</li>
+                    <li>TOOLS USED:Visual Studio Code</li>
+                <a href="https://21s144.github.io/guessnumber/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="work-3.png" >
+            <div class="layer">
+                <h3>Restaraunt Management</h3>
+                <p>Developed a Website for restraunt where you can able to see the menu and chef and special dishes of the retratunt and you can give the feedback also. 
+                    </p><br>
+                    <li>TECHNOLOGY USED: HTML, CSS
+                        .</li>
+                    <li>TOOLS USED:Visual Studio Code</li>
+                <a href="https://21s144.github.io/restrauntmanagentsystem/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/21s144" class="btn" target="_blank"><i class="fa-brands fa-square-github"></i> See More</a>
+ </div>
+</div>
+<!-----contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ramadevi1672004@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9384396812</p>
+            <div class="social-icons">
+                <a href="https://github.com/21s144"target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/rama-devi-p-04298324b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               <!--- <a href="https://www.facebook.com/profile.php?id=100009120214374&mibextid=ZbWKwL "><i class="fa-brands fa-facebook"></i></a>-->
+                <a href="https://www.instagram.com/mizz_unicorn__?igsh=M3E1MDZhZGNkdm80" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/rama819934?t=_G_T59H64rQcXVusaq9EQQ&s=08" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+            <a href="717821s144_RAMADEVI P.pdf" download class="btn btn2"target="_blank">Download CV</a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>createdby @rama47 <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyDAWgjPrsJSfIipnwA-7kNujjvWWOd7VsULDdw0Ky6nI6-8oa-rzBRlHKgIlTBJGg3Wg/exec'
+            const form = document.forms['submit-to-google-sheet']
+          const msg=document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
